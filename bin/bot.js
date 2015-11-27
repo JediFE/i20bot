@@ -1,15 +1,11 @@
 'use strict';
 
-var NorrisBot = require('../lib/norrisbot');
+var I20bot = require('../lib/norrisbot');
 
-var token = process.env.BOT_API_KEY || require('../token');
-var dbPath = process.env.BOT_DB_PATH;
-var name = process.env.BOT_NAME;
+var token = require('../token');
 
-var norrisbot = new NorrisBot({
-    token: token,
-    dbPath: dbPath,
-    name: name
+var i20bot = new I20bot({
+    token: token
 });
 
-norrisbot.run();
+i20bot.run();
