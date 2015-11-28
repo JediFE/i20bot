@@ -1,6 +1,6 @@
 'use strict';
 
-var I20bot = require('../lib/norrisbot');
+var I20bot = require('../lib/i20bot');
 
 var token = require('../token');
 
